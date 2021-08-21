@@ -65,7 +65,7 @@ Let's return back to the scripts. There are six build scripts in total:
    2. It then has to download the OpenJDK source code.
    3. It applies the patches stored in this repository.
    4. It clones one extra repository - the AdoptOpenJDK
-      [openjdk-build][bld] repository used for the CA certificates.
+      [temurin-build][bld] repository used for the CA certificates.
  * `build.sh` - This script is doing the *Build* phase.
    1. It configures the JDK build using the `configure` script.
    2. It runs the JDK build using `make`.
@@ -79,7 +79,7 @@ Let's return back to the scripts. There are six build scripts in total:
       packages and the full JDK) into a tarball which is then uploaded
       as a build artifact.
 
-[bld]: https://github.com/adoptopenjdk/openjdk-build
+[bld]: https://github.com/adoptium/temurin-build
 
 ![build stages](images/build_process.png)
 

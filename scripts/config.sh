@@ -9,7 +9,7 @@ JDKDIR="$BUILDDIR/jdk"
 # openjdk-build repo dir
 ABLDDIR="$BUILDDIR/openjdk-build"
 # openjdk-build repo
-ABLDREPO="https://github.com/AdoptOpenJDK/openjdk-build.git"
+ABLDREPO="https://github.com/adoptium/temurin-build.git"
 # cacertfile
 CACERTFILE="$ABLDDIR/security/cacerts"
 # hg tarball
@@ -17,10 +17,6 @@ JAVA_TMP="$BUILDDIR/jdk_tmp"
 TARBALL_MAX_DOWNLOADS=10
 
 JRI_MODULES="java.se,jdk.jdwp.agent,jdk.unsupported,jdk.management.agent,jdk.jartool,jdk.crypto.ec"
-
-JTREG="$BUILDDIR/jtreg"
-JTREG_URL="https://ci.adoptopenjdk.net/view/Dependencies/job/jtreg/lastSuccessfulBuild/artifact/jtreg-4.2.0-tip.tar.gz"
-JTREG_FILE="$BUILDDIR/jtreg.tar.gz"
 
 ###############################################################################
 # Set the debug level
